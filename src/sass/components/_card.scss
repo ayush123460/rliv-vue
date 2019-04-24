@@ -87,7 +87,12 @@
 
         .card-img {
             width: 300px;
-            height: 225;
+            height: 225px;
+
+            img {
+                width: 300px;
+                height: 225px;
+            }
         }
 
         .card-body {
