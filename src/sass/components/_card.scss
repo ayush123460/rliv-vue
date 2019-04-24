@@ -72,3 +72,30 @@
         margin-bottom: 20px;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 300px;
+
+        .card-title {
+            font-size: 1.2rem;
+        }
+
+        .card-subtitle {
+            font-size: 0.7rem;
+        }
+
+        .card-img {
+            width: 300px;
+            height: 225;
+        }
+
+        .card-body {
+            font-size: 0.9rem;
+
+            .prize {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

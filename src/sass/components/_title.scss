@@ -16,3 +16,15 @@
         text-transform: uppercase;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .title {
+        div.bar {
+            width: 55px;
+            height: 4px;
+        }
+        h1 {
+            font-size: 2.2rem;
+        }
+    }
+}

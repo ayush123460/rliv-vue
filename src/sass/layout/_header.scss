@@ -74,9 +74,11 @@ header {
 @media screen and (max-width: 960px) {
     header {
         position: relative;
+
         .left, .right, .login {
             display: none;
         }
+
         .mob {
             position: absolute;
             top: 35px;
@@ -87,6 +89,7 @@ header {
 
             .bar {
                 transition: 0.2s ease-in-out;
+                border-radius: 10px;
                 &:not(:nth-child(2)) {
                     @include object(50px, 3px, white);
                 }
@@ -107,30 +110,32 @@ header {
                 cursor: pointer;
             }
         }
-        .mobile {
-            z-index: 9;
-            position: fixed;
-            top: 0;
-            // padding: 30px;
-            @include object(100vw, 100vh, rgba(0, 0, 0, 0.8));
-            transition: 0.3s ease;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-            transition: all 0.3s ease-in-out;
+        
+        // .mobile {
+        //     z-index: 9;
+        //     position: fixed;
+        //     top: 0;
+                
+        //     }
+        //     @include object(100vw, 100vh, rgba(0, 0, 0, 0.8));
+        //     transition: 0.3s ease;
+        //     flex-direction: column;
+        //     justify-content: space-evenly;
+        //     align-items: center;
+        //     transition: all 0.3s ease-in-out;
 
-            a, a:visited, a:active {
-                // display: block;
-                height: 20px;
-                width: auto;
-                color: white;
-                text-transform: uppercase;
-            }
+        //     a, a:visited, a:active {
+        //         // display: block;
+        //         height: 20px;
+        //         width: auto;
+        //         color: white;
+        //         text-transform: uppercase;
+        //     }
 
-            &.active {
-                display: flex;
-            }
-        }
+        //     &.active {
+        //         display: flex;
+        //     }
+        // }
     }
 }
 
@@ -145,6 +150,27 @@ header {
     header {
         .mob {
             top: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        height: 150px;
+
+        .container {
+            .mob {
+                top: 100px;
+                right: 40%;
+
+                .bar {
+                    width: 40px;
+                }
+
+                .bar:nth-child(2) {
+                    width: 40px;
+                }
+            }
         }
     }
 }

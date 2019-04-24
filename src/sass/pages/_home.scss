@@ -1,6 +1,6 @@
 .hero {
     position: relative;
-    @include object(100%, 400px, url("../../../public/img/poster.jpg") no-repeat);
+    @include object(100%, 400px, url("../public/img/poster.jpg") no-repeat);
     background-size: cover;
     
     .bg {
@@ -64,7 +64,7 @@
 
 .yt {
     margin-top: 60px;
-    height: 630px;
+    height: 630px;left: 15%;
     padding: 50px;
     background: lighten(black, 10%);
     
@@ -91,7 +91,7 @@
     }
     .tournaments > .container-fluid > .row {
         // flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-evenly;left: 15%;
     }
 }
 
@@ -147,14 +147,30 @@
     .hero {
         background-position: 20% 0%;
     }
+
     .hero > .box {
+        left: 10%;
         border-width: 5px;
-        width: 180px;
-        height: 150px;
+        width: 200px;
+        height: 160px;
     }
+
     .hero > .inner-box {
+        left: 10%;
         border-width: 10px;
-        width: 180px;
-        height: 150px;
+        width: 200px;
+        height: 160px;
+    }
+
+    .hero > span {
+        left: 15%;    
+    }
+
+    .hero > .cta {
+        left: 15%;
+    }
+    
+    .tournaments {
+        height: auto;
     }
 }
