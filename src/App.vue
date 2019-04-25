@@ -4,9 +4,9 @@
         <div class="container">
             <!-- Left Side Navigation -->
             <div class="left">
-                <a href="/">home</a>
-                <a href="#">blog</a>
-                <a href="#">tournaments</a>
+                <router-link to="/" exact>home</router-link>
+                <router-link to="blog">blog</router-link>
+                <router-link to="tournaments">tournaments</router-link>
             </div>
             <!-- Logo -->
             <div class="main">
@@ -15,9 +15,9 @@
             </div>
             <!-- Right side Navigation -->
             <div class="right">
-                <a href="#">about</a>
-                <a href="#">donate</a>
-                <a href="#">contact</a>
+                <router-link to="about">about</router-link>
+                <router-link to="donate">donate</router-link>
+                <router-link to="contact">contact</router-link>
             </div>
             <div class="mob" onclick="toggleMenu()">
                 <div class="bar"></div>
@@ -25,12 +25,11 @@
                 <div class="bar"></div>
             </div>
             <div class="mobile">
-                <a href="/">home</a>
-                <a href="#">tournaments</a>
-                <a href="#">about</a>
-                <a href="#">donate</a>
-                <a href="#">contact</a> --}}
-                <button class="btn btn-primary">Login</button>
+                <router-link to="/">home</router-link>
+                <router-link to="tournaments">tournaments</router-link>
+                <router-link to="about">about</router-link>
+                <router-link to="donate">donate</router-link>
+                <router-link to="contact">contact</router-link>
             </div>
         </div>
     </header>
