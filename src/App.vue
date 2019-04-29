@@ -14,6 +14,7 @@
                     RL INDIA
                 </div>
                 <!-- Right side Navigation -->
+                <div class="right">
                     <router-link to="about">about</router-link>
                     <router-link to="donate">donate</router-link>
                     <router-link to="contact">contact</router-link>
