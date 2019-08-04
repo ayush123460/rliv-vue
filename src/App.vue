@@ -5,7 +5,6 @@
                 <!-- Left Side Navigation -->
                 <div class="left">
                     <router-link to="/" exact>home</router-link>
-                    <router-link to="blog">blog</router-link>
                     <router-link to="tournaments">tournaments</router-link>
                 </div>
                 <!-- Logo -->
@@ -19,12 +18,12 @@
                     <router-link to="donate">donate</router-link>
                     <router-link to="contact">contact</router-link>
                 </div>
-                <div class="mob" onclick="toggleMenu()">
+                <div class="mob" @click="toggleMenu()" ref="mob">
                     <div class="bar"></div>
                     <div class="bar"></div>
                     <div class="bar"></div>
                 </div>
-                <div class="mobile">
+                <div class="mobile" ref="mobile">
                     <router-link to="/">home</router-link>
                     <router-link to="tournaments">tournaments</router-link>
                     <router-link to="about">about</router-link>
@@ -39,6 +38,22 @@
         </footer>
     </div>
 </template>
+
+<script>
+export default {
+    methods: {
+        toggleMenu: function() {
+            // function to toggle the menu in Mobile viewport.
+            let m = this.$refs.mob;
+            let mb = this.$refs.mobile;
+            m.classList.toggle('active');
+            mb.classList.toggle('active');
+            document.getElementsByTagName("body")[0].classList.toggle('overflow');
+        }
+    }
+}
+</script>
+
 
 <style lang="scss">
 @import './sass/main';
